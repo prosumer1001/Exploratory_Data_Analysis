@@ -35,11 +35,16 @@ png(filename = "plot5.png", width = 540, height = 540, units = "px")
 
 ## Create plot
 
-plot5 <- ggplot(baltimoreSub,aes(factor(year),Emissions)) +
-        geom_bar(stat="identity",fill="grey",width=0.65) +
-        theme_bw() +  guides(fill=FALSE) +
-        labs(x="year", y=expression("Total PM"[2.5]*" Emissions (Tons)")) + 
-        labs(title=expression("Motor Vehicle Emissions in Baltimore City (1999-2008)," * " PM"[2.5]))
+plot5 <- ggplot(baltimoreSub, aes(factor(year),
+                                 Emissions)) +
+        geom_bar(stat = "identity",
+                 fill = "grey",
+                 width = 0.65) +
+        theme_bw() +  
+        guides(fill = FALSE) +
+        labs(x = "year", 
+             y = expression("Total PM"[2.5]*" Emissions (Tons)")) + 
+        labs(title = expression("Motor Vehicle Emissions in Baltimore City (1999-2008)," * " PM"[2.5]))
 
 print(plot5)
 

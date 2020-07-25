@@ -30,11 +30,16 @@ data01Combustion <- data01[data01$SCC %in% data02Combustion,]
 ## Open png machine to create plot1.png
 png(filename = "plot4.png", width = 540, height = 540, units = "px")
 
-plot4 <- ggplot(data01Combustion,aes(factor(year),Emissions/10^5)) +
-        geom_bar(stat="identity",fill="grey",width=0.65) +
-        theme_bw() +  guides(fill=FALSE) +
-        labs(x="year", y=expression("Total PM"[2.5]*" Emission (Tons - Hundred Thousands)")) + 
-        labs(title=expression("U.S. Coal Combustion Source Emissions (1999-2008)," * " PM"[2.5]))
+plot4 <- ggplot(data01Combustion,aes(factor(year),
+                                     Emissions/10^5)) +
+        geom_bar(stat="identity",
+                 fill="grey",
+                 width=0.65) +
+        theme_bw() +  
+        guides(fill=FALSE) +
+        labs(x = "year", 
+             y = expression("Total PM"[2.5]*" Emission (Tons - Hundred Thousands)")) + 
+        labs(title = expression("U.S. Coal Combustion Source Emissions (1999-2008)," * " PM"[2.5]))
 
 print(plot4)
 
