@@ -1,7 +1,7 @@
 ## Coursera, Course.  Exploratory Data Analysis
 ## Coursera (https://www.coursera.org/learn/exploratory-data-analysis/peer/b5Ecl/course-project-2)
 
-# Question 3, plot3
+## Question 3, plot3
 ## Of the four types of sources indicated by the type(point, nonpoint, onroad, nonroad) variable, 
 ## which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? 
 ## Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make 
