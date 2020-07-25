@@ -22,9 +22,7 @@ emissionsAggregate <- aggregate(Emissions ~ year, data = data01, FUN = sum)
 ## Open png machine to create plot1.png
 png(filename = "plot1.png", width = 540, height = 540, units = "px")
 
-## Print numeric values in fixed notation
-#options(scipen = 10)
-
+## Create plot
 barplot(
         (emissionsAggregate$Emissions)/10^6,
         names.arg=emissionsAggregate$year,
